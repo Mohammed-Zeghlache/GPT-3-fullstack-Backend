@@ -36,7 +36,7 @@ app.post("/register", async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Backend is working ✅');
+  res.send('Backend is working. ✅');
 });
 
 // 👉 Login Route
