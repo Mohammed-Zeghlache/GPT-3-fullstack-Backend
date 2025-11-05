@@ -1,5 +1,5 @@
-require('dotenv').config(); // ✅ Load .env first
-// console.log("✅ MONGO_URI:", process.env.MONGO_URI);
+require('dotenv').config(); 
+
 const express = require('express');
 const mongoose = require('mongoose');
 const User = require('./models/User');
@@ -71,7 +71,7 @@ app.post("/login", async (req, res) => {
   }
 });
 
-// ✅ Connect to MongoDB using .env
+
 mongoose.connect(process.env.MONGO_URI, {
   serverSelectionTimeoutMS: 5000
 })
